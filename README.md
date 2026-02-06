@@ -63,6 +63,7 @@ const Home = () => {
 
 Dentro do componente **Navbar**:
 
+{% raw %}
 ```
 import { Link } from 'react-router-dom';
 
@@ -129,6 +130,7 @@ const Navbar = () => {
 
 export default Navbar;
 ```
+{% endraw %}
 
 
 
@@ -139,6 +141,7 @@ O que é [sx](https://mui.com/system/getting-started/the-sx-prop/)?
 A propriedade sx permite que você trabalhe com um superconjunto de CSS que empacota todas as funções de estilo expostas em @mui/system. Você pode especificar qualquer CSS válido usando este suporte, bem como muitas propriedades com reconhecimento de tema que são exclusivas do MUI System.
 
 
+{% raw %}
 ```
 <Box component='article'>
     sx={{
@@ -153,12 +156,14 @@ A propriedade sx permite que você trabalhe com um superconjunto de CSS que empa
     }}
 </Grid>
 ```
+{% endraw %}
 
 
 :heavy_check_mark: Uso de Componentes reutilizáveis em React;
 
 Conteúdo do componente Title:
 
+{% raw %}
 ```
 import { Typography } from '@mui/material'
 import React from 'react'
@@ -180,6 +185,7 @@ const Title = ({ text, textAlign }) => {
 
 export default Title;
 ```
+{% endraw %}
 
 
 :heavy_check_mark: Utilização de Styled-Components com Material UI
@@ -201,6 +207,7 @@ const ListMenu = styled(List)(({ theme }) => ({
 
 [Uso de Grid no Material UI](https://mui.com/material-ui/react-grid/)
 
+{% raw %}
 ```react
 <Grid item xs={12} sm={4} md={6}>
     <img src={imgDetail} alt="" 
@@ -210,6 +217,7 @@ const ListMenu = styled(List)(({ theme }) => ({
     />
 </Grid>
 ```
+{% endraw %}
 
 
 :heavy_check_mark: Uso de Menu mobile com MUI (Drawer)
